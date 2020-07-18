@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movie Browser</string>
+    <string name="api_key">64fea2e5766a2302c9782fed4edbdc4a</string>
+    <string name="sort_movie">Movie Sort By</string>
+    <string name="no_internet_message">No Internet</string>
+    <string name="refresh">Refresh</string>
+    <string name="sort_popularity">Sort by popularity</string>
+    <string name="sort_highest_rated">Sort By Highest Rated</string>
+    <string name="progress_msg">Please Wait...!!!</string>
+    <string name="read_plot">Plot of a movie</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="sort_by_label">"Sort By: "</string>
+    <string name="sort_spinner_hint">Sort By</string>
+
+</resources>

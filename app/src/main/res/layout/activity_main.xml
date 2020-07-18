@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvSortLabel"
+        android:layout_alignParentStart="true"
+        android:text="@string/sort_by_label"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:paddingTop="@dimen/_4sdp"
+        android:layout_margin="@dimen/_5sdp"/>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/sort_spinner_hint"
+        app:ms_hide_arrow="false"
+        android:layout_toEndOf="@+id/tvSortLabel"
+        app:ms_arrow_tint="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movieRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_below="@+id/spSort"/>
+
+    <RelativeLayout
+        android:id="@+id/tv_no_internet_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_no_internet_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:text="@string/no_internet_message" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_140sdp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
